@@ -1,23 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Web Design - Website</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Web Design - Website</title>
 
-        <!-- use Bootstrap version v5.2.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- use Bootstrap version v5.2.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- styles scss to css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Coding here -->
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top px-5" id="active-section">
+        <div class="container">
+          <div class="row w-100">
+            <div class="col">
+              <h4 class="text-uppercase text-center text-white">web design</h4>
+            </div>
+            <div class="col">
+              <ul class="nav nav-pills d-flex justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#section1"
+                    >portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#section2" 
+                    >about</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase fw-bold" href="#section3"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid py-4">
+        <div class="imagediv">
+          <img
+            src="./assets/img/avataaars.svg"
+            class="d-block mx-auto"
+            alt="pic1"
+          />
+          <h1 class="text-uppercase text-white text-center mt-4">web design</h1>
+        </div>
+        <div class="icondiv mx-auto d-flex align-items-center justify-content-center">
+          <span class="line white-line"></span>
+          <i class="fa-solid fa-star fs-4 p-2" style="color: #ffffff"></i>
+          <span class="line white-line"></span>
+        </div>
+        <p class="text-white text-center text-capitalize">graphic artist- web designer -illustrator</p>
+      </div>
+    </header>
 
-    </head>
-    <body>
-        <!-- Coding here -->
-    </body>
+    <!-- SECTION ------------------------------------------------------------------->
+    <section id="section1" class="my-section">
+      <h3 class="text-uppercase fw-bold text-center mt-4">portfolio</h3>
+          <div class="blackstaricon mx-auto d-flex align-items-center justify-content-center">
+            <span class="line black-line"></span>
+            <i class="fa-solid fa-star fs-4 p-2"></i>
+            <span class="line black-line"></span>
+          </div>
+          <div class="container w-75 mx-auto mt-3">
+            <div class="row row-cols-2 row-cols-lg-3 gx-0 gy-4">
+              <div class="col">
+                <img src="./assets/img/portfolio/cabin.png" class="iconhover" alt="Cabin Portfolio Image">
+              </div>
+              <div class="col">
+                <img src="./assets/img/portfolio/cake.png" alt="Cake Portfolio Image">
+              </div>
+              <div class="col">
+                <img src="./assets/img/portfolio/circus.png" alt="Circus Portfolio Image">
+              </div>
+              <div class="col">
+                <img src="./assets/img/portfolio/game.png" alt="Game Portfolio Image">
+              </div>
+              <div class="col">
+                <img src="./assets/img/portfolio/safe.png" alt="Safe Portfolio Image">
+              </div>
+              <div class="col">
+                <img src="./assets/img/portfolio/submarine.png" alt="Submarine Portfolio Image">
+              </div>
+            </div>
+          </div>  
+    </section>
+
+    <section id="section2" class="mt-5 pb-5">
+      <h3 class="text-white text-uppercase fw-bold text-center pt-5">about</h3>
+        <div class="container w-50 d-flex justify-content-center align-items-center">
+          <div class="whitestar d-flex justify-content-center align-items-center">
+            <span class="line white-line"></span>
+            <i class="fa-solid fa-star fs-4 p-2" style="color: #ffffff;"></i>
+            <span class="line white-line"></span>
+          </div>
+        </div>
+        <div class="container mx-auto w-75 text-white">
+          <div class="row d-flex justify-content-center align-items-center gx-5 ">
+            <div class="col-5">
+              Passionate about web design, I create visually compelling, user-friendly
+              websites that embody your brand's identity. With expertise in modern design trends,
+              I deliver responsive, intuitive interfaces that enhance user experience. Every project   
+            </div>
+            <div class="col-5">
+              is approached with creativity and attention to detail, ensuring your website not only looks exceptional but also functions seamlessly. Let's 
+              collaborate to turn your vision into a unique, high-performing website tailored to your 
+              specific goals, driving impactful results and lasting success.
+            </div>
+          </div> 
+        </div>
+        <button type="button" class="btn border border-1 text-white outline d-block mx-auto p-2 mt-3">
+          <i class="fa-solid fa-download me-2" style="color: #ffffff;"></i> free download !
+        </button>
+    </section>
+
+    <section id="section3" class="py-5">
+      <h3 class="text-uppercase fw-bold text-center mt-4">contact me</h3>
+      <div class="blackstaricon mx-auto d-flex align-items-center justify-content-center">
+        <span class="line black-line"></span>
+        <i class="fa-solid fa-star fs-4 p-2"></i>
+        <span class="line black-line"></span>
+      </div>
+      <div class="container w-50 mx-auto mt-3">
+        <form class="row text-secondary w-75 mx-auto">
+          <div class="">
+            <label for="fname" class="form-label mt-3">Full name</label>
+            <input type="text" class="form-control square-input border-top-0 border-start-0 border-end-0" id="fname" name="fname">
+          </div>
+          <div class="">
+            <label for="email" class="form-label mt-3">Email</label>
+            <input type="text" class="form-control square-input border-top-0 border-start-0 border-end-0" id="email" name="email">
+          </div>
+          <div class="">
+            <label for="phone" class="form-label mt-3">Phone number</label>
+            <input type="text" class="form-control square-input border-top-0 border-start-0 border-end-0" id="phone" name="phone">
+          </div>
+          <div class="">
+            <label for="message" class="form-label mt-3">Message</label>
+            <textarea name="message" class="form-control border-top-0 border-start-0 border-end-0 shadow-none" rows="2" id="message"></textarea>
+          </div>
+          <button type="button" class="send-btn text-white mt-2 ms-2 p-2 border-0 rounded">send</button>
+        </form>
+      </div>
+    </section>
+
+      <!-- FOOTER ----------------------------------------------------------------------------->
+      <footer>
+        <div class="container text-white d-flex justify-content-center align-items-center p-5" style="border: 1px solid black;">
+          <div class="row row-cols-lg-3  w-100 text-center">
+            <div class="col">
+              <h6 class="text-uppercase fw-bold mb-3">location</h6>
+                  <p class="para m-0">Cocody,Abidjan</p>
+                  <p class="para m-0">04 BP 1679 ABIDJAN</p>
+            </div>
+            <div class="col">
+              <h6 class="text-uppercase fw-bold mb-3">around the web</h6>
+              <div class="d-flex justify-content-center icons">
+                <div class="icon">
+                  <i class="fa-brands fa-facebook-f border border-2 rounded-circle p-2" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-twitter border border-2 rounded-circle p-2" style="color: #ffffff;"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin border border-2 rounded-circle p-2"></i>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-basketball border border-2 rounded-circle p-2"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h6 class="text-uppercase fw-bold ">about web design</h6>
+              <p>Passionate about <span class="colored-span text-success">Web Design,</span> i create visually compelling, user-friendly websites.</p>
+            </div>
+          </div>
+      </footer>
+    <!-- Bootstrap JS bundle -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      
+    </script>
+  </body>
 </html>
