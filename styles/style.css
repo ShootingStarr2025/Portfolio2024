@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .nav-link {
+  color: #fff; /*Regular link color */
+}
+header .nav-link:hover {
+  color: #29bb9c; /*Hover color*/
+}
+header .nav-link.active {
+  color: #29bb9c; /* Active link color */
+  font-weight: bold; /* Optional: to make the active link stand out */
+  background-color: #29bb9c !important; /* force background color */
+}
+header nav {
+  background-color: #005d70;
+}
+header .bg-navbar {
+  background-color: #005d70;
+}
+header .imagediv {
+  padding-top: 70px;
+}
+
+.navbar-btn {
+  background-color: #29bb9c;
+}
+
+.container-fluid {
+  background-color: #29bb9c;
+}
+
+img {
+  width: 13%;
+}
+
+.line {
+  display: block;
+  width: 50%;
+  height: 3px;
+  border-radius: 15px;
+}
+
+.icondiv {
+  width: 15%;
+}
+
+.white-line {
+  background-color: #fff;
+}
+
+.black-line {
+  background-color: #005d70;
+}
+
+.blackstaricon {
+  width: 12%;
+}
+
+#section2 {
+  background-color: #29bb9c;
+}
+#section2 .whitestar {
+  width: 30%;
+}
+#section2 .btn {
+  background-color: #29bb9c;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#section3 form input[type=text]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.send-btn {
+  background-color: #29bb9c;
+  outline: none;
+  width: 15%;
+}
+
+.square-input,
+.t-area {
+  width: 100%; /* Adjust width as needed */
+  padding: 0; /* Remove any padding to maintain the square shape */
+  border-radius: 0; /* Remove any border-radius for sharp edges */
+}
+
+footer {
+  background-color: #005d70;
+}
+footer .copyright {
+  background-color: #001a20;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.colored-span {
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header h5 {
+  font-size: 38px;
+  font-weight: 500;
+  color: #005d70;
+}
+
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.modal-body img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.modal-body p {
+  width: 70%;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-footer button {
+  background-color: #29bb9c;
+  border: none;
+}
+.modal-footer button:hover {
+  background-color: #29bb9c;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.active {
+  color: #fff;
+}
+
+.navbar-toggler {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  background-color: #29bb9c;
+}
+.navbar-toggler .navbar-toggler-icon {
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  /* This uses an SVG image for the hamburger icon. The `stroke` value controls the color. */
+}
+.navbar-toggler p {
+  margin: 0; /* Ensure no default margin */
+  display: block;
+  line-height: 1; /* Vertically align the text */
+  margin: 0 2px 0 0;
+}
+
+.cabicon span {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.btn-close {
+  width: 2rem; /* Adjust width */
+  height: 2rem; /* Adjust height */
+  background-size: 1.5rem; /* Adjust the size of the 'X' icon */
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  max-width: 25rem;
+  padding: 0;
+}
+
+.card-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(41, 187, 156, 0.9);
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.card-caption:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.modal-header,
+.modal-footer,
+.modal-body {
+  border: none; /* Ensures all sections (header, footer, body) have no borders */
+}/*# sourceMappingURL=style.css.map */

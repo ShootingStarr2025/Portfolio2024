@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// COLOR
+$cyan-800: #005d70;
+$green: #29bb9c;
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$teal: #20c997;
+$cyan: #001a20;
+$white: #fff;
+
+header {
+  .nav-link {
+    color: $white; /*Regular link color */
+
+    &:hover {
+      color: $green; /*Hover color*/
+    }
+
+    &.active {
+      color: $green; /* Active link color */
+      font-weight: bold; /* Optional: to make the active link stand out */
+      background-color: $green !important; /* force background color */
+    }
+  }
+
+  nav {
+    background-color: $cyan-800;
+  }
+
+  .bg-navbar {
+    background-color: $cyan-800;
+  }
+  .imagediv {
+    padding-top: 70px;
+  }
+}
+
+.navbar-btn {
+  background-color: $green;
+}
+
+.container-fluid {
+  background-color: $green;
+}
+
+img {
+  width: 13%;
+}
+
+.line {
+  display: block;
+  width: 50%;
+  height: 3px;
+  border-radius: 15px;
+}
+
+.icondiv {
+  width: 15%;
+}
+
+.white-line {
+  background-color: $white;
+}
+
+.black-line {
+  background-color: $cyan-800;
+}
+
+.blackstaricon {
+  width: 12%;
+}
+
+#section2 {
+  background-color: $green;
+  .whitestar {
+    width: 30%;
+  }
+  .btn {
+    background-color: $green;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#section3 form input[type="text"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.send-btn {
+  background-color: $green;
+  outline: none;
+  width: 15%;
+}
+
+.square-input,
+.t-area {
+  width: 100%; /* Adjust width as needed */
+  padding: 0; /* Remove any padding to maintain the square shape */
+  border-radius: 0; /* Remove any border-radius for sharp edges */
+}
+
+footer {
+  background-color: $cyan-800;
+  .copyright {
+    background-color: $cyan;
+  }
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.colored-span {
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header {
+  h5 {
+    font-size: 38px;
+    font-weight: 500;
+    color: $cyan-800;
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  img {
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  & p {
+    width: 70%;
+  }
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    background-color: $green;
+    border: none;
+  }
+  & button:hover {
+    background-color: $green;
+  }
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.active {
+  color: $white;
+}
+
+.navbar-toggler {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $white;
+  font-size: 16px;
+  background-color: $green;
+
+  .navbar-toggler-icon {
+    color: $white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* This uses an SVG image for the hamburger icon. The `stroke` value controls the color. */
+  }
+
+  p {
+    margin: 0; /* Ensure no default margin */
+    display: block;
+    line-height: 1; /* Vertically align the text */
+    margin: 0 2px 0 0;
+  }
+}
+
+.cabicon {
+  span {
+    width: 50%;
+    margin-top: 20px;
+  }
+}
+
+.btn-close {
+  width: 2rem; /* Adjust width */
+  height: 2rem; /* Adjust height */
+  background-size: 1.5rem; /* Adjust the size of the 'X' icon */
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  max-width: 25rem;
+  padding: 0;
+}
+
+.card-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(41, 187, 156, 0.9);
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.card-caption:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.modal-header,
+.modal-footer,
+.modal-body {
+  border: none; /* Ensures all sections (header, footer, body) have no borders */
+}

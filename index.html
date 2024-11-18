@@ -11,10 +11,9 @@
     <meta name="author" content="" />
     <title>Web Design - Website</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- use Bootstrap version v5.2.3 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -23,7 +22,7 @@
       crossorigin="anonymous"
     />
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
@@ -46,31 +45,28 @@
   <body>
     <!-- Coding here -->
     <header>
-      <nav class="navbar navbar-expand-md fixed-top px-5" id="active-section">
+      <nav class="navbar navbar-expand-lg text-white text-uppercase fixed-top bg-navbar" id="mainNav">
         <div class="container">
-          <div class="row w-100">
-            <div class="col">
-              <h4 class="text-uppercase text-center text-white">web design</h4>
-            </div>
-            <div class="col">
-              <ul class="nav nav-pills d-flex justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase fw-bold" href="#section1"
-                    >portfolio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase fw-bold" href="#section2" 
-                    >about</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase fw-bold" href="#section3"
-                    >contact</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <a href="#page-top" class="navbar-brand text-white">web design</a>
+          <button class="navbar-toggler text-uppercase fw-bold navbar-btn" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                      aria-label="Toggle navigation">
+                      Menu 
+                      <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#section1">Portfolio</a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                <a  class="nav-link py-3 px-0 px-lg-3 rounded" href="#section2">About</a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#section3">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -81,7 +77,7 @@
             class="d-block mx-auto"
             alt="pic1"
           />
-          <h1 class="text-uppercase text-white text-center mt-4">web design</h1>
+          <h1 class="text-uppercase text-center mt-4">web design</h1>
         </div>
         <div class="icondiv mx-auto d-flex align-items-center justify-content-center">
           <span class="line white-line"></span>
@@ -93,38 +89,211 @@
     </header>
 
     <!-- SECTION ------------------------------------------------------------------->
-    <section id="section1" class="my-section">
-      <h3 class="text-uppercase fw-bold text-center mt-4">portfolio</h3>
-          <div class="blackstaricon mx-auto d-flex align-items-center justify-content-center">
-            <span class="line black-line"></span>
-            <i class="fa-solid fa-star fs-4 p-2"></i>
-            <span class="line black-line"></span>
+    <section id="section1" class="py-5">
+      <div class="container">
+        <h3 class="text-uppercase fw-bold text-center mt-4">portfolio</h3>
+        <div class="blackstaricon mx-auto d-flex align-items-center justify-content-center">
+          <span class="line black-line"></span>
+          <i class="fa-solid fa-star fs-4 p-2"></i>
+          <span class="line black-line"></span>
+        </div>
+        <div class="row d-flex justify-content-center mt-3">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card mx-auto" data-bs-toggle="modal" data-bs-target="#imagemodal2">
+              <div class="card-caption d-flex align-items-center justify-content-center h-100 w-100 text-white"><i class="fa-solid fa-plus fa-4x"></i></div>
+              <img src="./assets/img/portfolio/cabin.png" class="img-fluid w-100"  alt="cakepic">
+            </div>
           </div>
-          <div class="container w-75 mx-auto mt-3">
-            <div class="row row-cols-2 row-cols-lg-3 gx-0 gy-4">
-              <div class="col">
-                <img src="./assets/img/portfolio/cabin.png" class="iconhover" alt="Cabin Portfolio Image">
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card mx-auto" data-bs-toggle="modal" data-bs-target="#imagemodal3">
+              <div class="card-caption d-flex align-items-center justify-content-center h-100 w-100 text-white"><i class="fa-solid fa-plus fa-4x"></i></div>
+              <img src="./assets/img/portfolio/cake.png" class="img-fluid w-100"  alt="cakepic">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card mx-auto" data-bs-toggle="modal" data-bs-target="#imagemodal1">
+              <div class="card-caption d-flex align-items-center justify-content-center h-100 w-100 text-white"><i class="fa-solid fa-plus fa-4x"></i></div>
+              <img src="./assets/img/portfolio/circus.png" class="img-fluid w-100"  alt="circus">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card mx-auto" data-bs-toggle="modal" data-bs-target="#imagemodal2">
+              <div class="card-caption d-flex align-items-center justify-content-center h-100 w-100 text-white"><i class="fa-solid fa-plus fa-4x"></i></div>
+              <img src="./assets/img/portfolio/game.png" class="img-fluid w-100"  alt="gamepic">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card mx-auto" data-bs-toggle="modal" data-bs-target="#imagemodal3">
+              <div class="card-caption d-flex align-items-center justify-content-center h-100 w-100 text-white"><i class="fa-solid fa-plus fa-4x"></i></div>
+              <img src="./assets/img/portfolio/safe.png" class="img-fluid w-100"  alt="safepic">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card mx-auto" data-bs-toggle="modal" data-bs-target="#imagemodal3">
+              <div class="card-caption d-flex align-items-center justify-content-center h-100 w-100 text-white"><i class="fa-solid fa-plus fa-4x"></i></div>
+              <img src="./assets/img/portfolio/submarine.png" class="img-fluid w-100"  alt="submarinepic">
+            </div>
+          </div>
+
+        <!-- Modal ---------------------------------------------------------------------------------------------->
+        <div class="modal fade" id="imagemodal2" tabindex="-1" aria-labelledby="imageModalLabe2" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title w-100 text-center" id="imageModalLabel">LOG CABIN</h5>
+                <div class="cabicon d-flex w-25">
+                  <span class="line black-line"></span>
+                  <i class="fa-solid fa-star fs-4 p-2"></i>
+                  <span class="line black-line"></span>
+                </div>
               </div>
-              <div class="col">
-                <img src="./assets/img/portfolio/cake.png" alt="Cake Portfolio Image">
+              <div class="modal-body">
+                <img src="./assets/img/portfolio/cabin.png" class="img-fluid w-75" alt="Cabin Image"> <!-- Large Image -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum, 
+                  reprehenderit laborum cupiditate, voluptates dolore corrupti repudiandae 
+                  impedit obcaecati eligendi similique nobis tempora non aliquam alias! Veritatis nobis 
+                </p>
               </div>
-              <div class="col">
-                <img src="./assets/img/portfolio/circus.png" alt="Circus Portfolio Image">
-              </div>
-              <div class="col">
-                <img src="./assets/img/portfolio/game.png" alt="Game Portfolio Image">
-              </div>
-              <div class="col">
-                <img src="./assets/img/portfolio/safe.png" alt="Safe Portfolio Image">
-              </div>
-              <div class="col">
-                <img src="./assets/img/portfolio/submarine.png" alt="Submarine Portfolio Image">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Window</button>
               </div>
             </div>
-          </div>  
-    </section>
+          </div>
+        </div>
 
-    <section id="section2" class="mt-5 pb-5">
+        <div class="modal fade" id="imagemodal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title w-100 text-center" id="imageModalLabel">TASTY CAKE</h5>
+                <div class="cabicon d-flex w-25">
+                  <span class="line black-line"></span>
+                  <i class="fa-solid fa-star fs-4 p-2"></i>
+                  <span class="line black-line"></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img src="./assets/img/portfolio/cake.png" class="img-fluid w-75" alt="Cabin Image"> <!-- Large Image -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum, 
+                  reprehenderit laborum cupiditate, voluptates dolore corrupti repudiandae 
+                  impedit obcaecati eligendi similique nobis tempora non aliquam alias! Veritatis nobis 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="imagemodal3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title w-100 text-center" id="imageModalLabel">CIRCUS TENT</h5>
+                <div class="cabicon d-flex w-25">
+                  <span class="line black-line"></span>
+                  <i class="fa-solid fa-star fs-4 p-2"></i>
+                  <span class="line black-line"></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img src="./assets/img/portfolio/circus.png" class="img-fluid w-75" alt="Cabin Image"> <!-- Large Image -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum, 
+                  reprehenderit laborum cupiditate, voluptates dolore corrupti repudiandae 
+                  impedit obcaecati eligendi similique nobis tempora non aliquam alias! Veritatis nobis 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="imagemodal4" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title w-100 text-center" id="imageModalLabel">CONTROLLER</h5>
+                <div class="cabicon d-flex w-25">
+                  <span class="line black-line"></span>
+                  <i class="fa-solid fa-star fs-4 p-2"></i>
+                  <span class="line black-line"></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img src="./assets/img/portfolio/game.png" class="img-fluid w-75" alt="Cabin Image"> <!-- Large Image -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum, 
+                  reprehenderit laborum cupiditate, voluptates dolore corrupti repudiandae 
+                  impedit obcaecati eligendi similique nobis tempora non aliquam alias! Veritatis nobis 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="imagemodal5" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title w-100 text-center" id="imageModalLabel">LOCKED SAFE</h5>
+                <div class="cabicon d-flex w-25">
+                  <span class="line black-line"></span>
+                  <i class="fa-solid fa-star fs-4 p-2"></i>
+                  <span class="line black-line"></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img src="./assets/img/portfolio/safe.png" class="img-fluid w-75" alt="Cabin Image"> <!-- Large Image -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum, 
+                  reprehenderit laborum cupiditate, voluptates dolore corrupti repudiandae 
+                  impedit obcaecati eligendi similique nobis tempora non aliquam alias! Veritatis nobis 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="imagemodal6" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header d-flex flex-column align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title w-100 text-center" id="imageModalLabel">SUBMARINE</h5>
+                <div class="cabicon d-flex w-25">
+                  <span class="line black-line"></span>
+                  <i class="fa-solid fa-star fs-4 p-2"></i>
+                  <span class="line black-line"></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img src="./assets/img/portfolio/submarine.png" class="img-fluid w-75" alt="Cabin Image"> <!-- Large Image -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nostrum, 
+                  reprehenderit laborum cupiditate, voluptates dolore corrupti repudiandae 
+                  impedit obcaecati eligendi similique nobis tempora non aliquam alias! Veritatis nobis 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- section2 -->
+    <section id="section2" class="py-5">
       <h3 class="text-white text-uppercase fw-bold text-center pt-5">about</h3>
         <div class="container w-50 d-flex justify-content-center align-items-center">
           <div class="whitestar d-flex justify-content-center align-items-center">
@@ -134,7 +303,7 @@
           </div>
         </div>
         <div class="container mx-auto w-75 text-white">
-          <div class="row d-flex justify-content-center align-items-center gx-5 ">
+          <div class="row d-flex justify-content-center align-items-center gx-5">
             <div class="col-5">
               Passionate about web design, I create visually compelling, user-friendly
               websites that embody your brand's identity. With expertise in modern design trends,
@@ -152,6 +321,7 @@
         </button>
     </section>
 
+    <!-- section3 -->
     <section id="section3" class="py-5">
       <h3 class="text-uppercase fw-bold text-center mt-4">contact me</h3>
       <div class="blackstaricon mx-auto d-flex align-items-center justify-content-center">
@@ -160,7 +330,7 @@
         <span class="line black-line"></span>
       </div>
       <div class="container w-50 mx-auto mt-3">
-        <form class="row text-secondary w-75 mx-auto">
+        <form class="text-secondary w-75 mx-auto">
           <div class="">
             <label for="fname" class="form-label mt-3">Full name</label>
             <input type="text" class="form-control square-input border-top-0 border-start-0 border-end-0" id="fname" name="fname">
@@ -184,46 +354,73 @@
 
       <!-- FOOTER ----------------------------------------------------------------------------->
       <footer>
-        <div class="container text-white d-flex justify-content-center align-items-center p-5" style="border: 1px solid black;">
+        <div class="container text-white d-flex justify-content-center align-items-center p-5">
           <div class="row row-cols-lg-3  w-100 text-center">
             <div class="col">
               <h6 class="text-uppercase fw-bold mb-3">location</h6>
-                  <p class="para m-0">Cocody,Abidjan</p>
-                  <p class="para m-0">04 BP 1679 ABIDJAN</p>
+                  <p class="para m-0">Cocody,Abidjan<br>
+                    04 BP 1679 ABIDJAN</p>
             </div>
             <div class="col">
               <h6 class="text-uppercase fw-bold mb-3">around the web</h6>
               <div class="d-flex justify-content-center icons">
-                <div class="icon">
-                  <i class="fa-brands fa-facebook-f border border-2 rounded-circle p-2" style="color: #ffffff;"></i>
-                </div>
-                <div class="icon">
-                  <i class="fa-brands fa-twitter border border-2 rounded-circle p-2" style="color: #ffffff;"></i>
-                </div>
-                <div class="icon">
-                  <i class="fa-brands fa-linkedin border border-2 rounded-circle p-2"></i>
-                </div>
-                <div class="icon">
-                  <i class="fa-solid fa-basketball border border-2 rounded-circle p-2"></i>
-                </div>
+                  <a href="#" class="btn btn-outline-light social mx-1"><i class="fab fa-fw fa-facebook-f "></i></a>
+                  <a href="#" class="btn btn-outline-light social mx-1"><i class="fab fa-fw fa-twitter"></i></a>
+                  <a href="#" class="btn btn-outline-light social mx-1"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                  <a href="#" class="btn btn-outline-light social mx-1"><i class="fa-solid fa-basketball"></i></a>
               </div>
             </div>
             <div class="col">
-              <h6 class="text-uppercase fw-bold ">about web design</h6>
+              <h6 class="text-uppercase fw-bold mb-3">about web design</h6>
               <p>Passionate about <span class="colored-span text-success">Web Design,</span> i create visually compelling, user-friendly websites.</p>
             </div>
           </div>
+        </div>
+        <div class="bg-dark text-white text-center">
+          <p class="fs-6 py-2">Copyright &copy; Web Design 2024</p>
+        </div>
       </footer>
-    <!-- Bootstrap JS bundle -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap JS with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+      <!-- dynamic active js -->
     <script>
-      
+      //select all sections and nav links
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      //function to remove the active class from all nav links
+      function removeActiveClasses() {
+        navLinks.forEach(link => link.classList.remove('active'));
+      }
+
+      function addActiveClass(sectionId) {
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      // Listen for scroll events to update active class
+      window.addEventListener('scroll', () => {
+        let currentSection = '';
+
+        // Check which section is currently in view
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 50) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        // update active class
+        if (currentSection) {
+          removeActiveClasses();
+          addActiveClass(currentSection);
+        }
+      });
     </script>
   </body>
 </html>
